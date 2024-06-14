@@ -24,11 +24,14 @@ git clone https://github.com/200202087/webscraping.git
 cd web-scraping
 
 3. Install Required Python Packages
-pip install -r requirements.txt
+
 
 4. Create MySQL Database and Table
+   
 CREATE DATABASE prolan;
+
 USE prolan;
+
 CREATE TABLE tablo (
     num INT AUTO_INCREMENT PRIMARY KEY,
     ozel VARCHAR(255),
