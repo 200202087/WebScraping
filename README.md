@@ -19,13 +19,14 @@ PyMySQL
 # Installation
 
 1. Clone the Repository
-git clone https://github.com/200202087/web-scraping.git
+git clone https://github.com/200202087/webscraping.git
+
 cd web-scraping
 
-2. Install Required Python Packages
+3. Install Required Python Packages
 pip install -r requirements.txt
 
-3. Create MySQL Database and Table
+4. Create MySQL Database and Table
 CREATE DATABASE prolan;
 USE prolan;
 CREATE TABLE tablo (
