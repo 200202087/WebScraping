@@ -26,14 +26,29 @@ This project aims to compare product features and prices between the Trendyol an
 
 ### 1. Clone the Repository
 
-git clone https://github.com/200202087/webscraping.git
+```bash
+    git clone https://github.com/200202087/webscraping.git
+    cd web-scraping
+```
 
-cd web-scraping
 
 ### 2. Install Required Python Packages
 
 
 ### 3. Create MySQL Database and Table
+
+```bash
+    CREATE DATABASE prolan;
+    USE prolan;
+
+    CREATE TABLE tablo (
+    num INT AUTO_INCREMENT PRIMARY KEY,  
+    ozel VARCHAR(255),  
+    ism VARCHAR(255),
+    fiyat VARCHAR(50),  
+    lptp_tam TEXT
+);
+```
    
 CREATE DATABASE prolan;
 
