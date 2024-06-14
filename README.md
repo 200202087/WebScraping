@@ -49,24 +49,13 @@ This project aims to compare product features and prices between the Trendyol an
     lptp_tam TEXT
 );
 ```
-   
-CREATE DATABASE prolan;
-
-USE prolan;
-
-CREATE TABLE tablo (
-    num INT AUTO_INCREMENT PRIMARY KEY,  
-    ozel VARCHAR(255),  
-    ism VARCHAR(255),
-    fiyat VARCHAR(50),  
-    lptp_tam TEXT
-);
 
 ### 4. Update Database Connection Settings
 
 Update the database connection information in the main.py file to match your MySQL server:
 
-moba = pymysql.connect(
+```bash
+    moba = pymysql.connect(
     user='root',
     password='1234',
     host='127.0.0.1',
@@ -74,6 +63,7 @@ moba = pymysql.connect(
     charset='utf8mb4',
     cursorclass=pymysql.cursors.DictCursor
 )
+```
 
 ## Usage
 
