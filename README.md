@@ -28,7 +28,7 @@ This project aims to compare product features and prices between the Trendyol an
 
 ```bash
     git clone https://github.com/200202087/webscraping.git
-    cd web-scraping
+    cd webscraping
 ```
 
 
