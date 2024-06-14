@@ -19,8 +19,8 @@ PyMySQL
 # Installation
 
 1. Clone the Repository
-git clone https://github.com/username/project-name.git
-cd project-name
+git clone https://github.com/200202087/web-scraping.git
+cd web-scraping
 
 2. Install Required Python Packages
 pip install -r requirements.txt
