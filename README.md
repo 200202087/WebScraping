@@ -1,91 +1,74 @@
 # E-Commerce Comparison Project
 This project aims to compare product features and prices between the Trendyol and Amazon Turkey e-commerce platforms. Data is collected using web scraping techniques and stored in a MySQL database.
 
-# Table of Contents
+## Table of Contents
 
-Technologies Used
+1. [Technologies Used](#technologies-used)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Usage](#usage)
+5. [Database Structure](#database-structure)
+6. [Sources](#sources)
 
-Installation
+## Technologies Used
 
-Usage
+-Python 3
+-BeautifulSoup
+-Requests
+-MySQL Connector/Python
+-PyMySQL
 
-Database Structure
+## Installation
 
-Contributing
+### 1. Clone the Repository
 
-License
-
-# Technologies Used
-
-Python 3
-
-BeautifulSoup
-
-Requests
-
-MySQL Connector/Python
-
-PyMySQL
-
-# Installation
-
-1. Clone the Repository
 git clone https://github.com/200202087/webscraping.git
 
 cd web-scraping
 
-3. Install Required Python Packages
+### 2. Install Required Python Packages
 
 
-4. Create MySQL Database and Table
+### 3. Create MySQL Database and Table
    
 CREATE DATABASE prolan;
 
 USE prolan;
 
-CREATE TABLE tablo (
-
-    num INT AUTO_INCREMENT PRIMARY KEY,
-    
-    ozel VARCHAR(255),
-    
+CREATE TABLE tablo 
+(
+    num INT AUTO_INCREMENT PRIMARY KEY,  
+    ozel VARCHAR(255),  
     ism VARCHAR(255),
-    
-    fiyat VARCHAR(50),
-    
+    fiyat VARCHAR(50),  
     lptp_tam TEXT
     
-
 );
 
-4. Update Database Connection Settings
+### 4. Update Database Connection Settings
 
 Update the database connection information in the main.py file to match your MySQL server:
 
-moba = pymysql.connect(
-
+moba = pymysql.connect
+(
     user='root',
-    
     password='1234',
-    
     host='127.0.0.1',
-    
     db='prolan',
-    
     charset='utf8mb4',
-    
     cursorclass=pymysql.cursors.DictCursor
-    
+
 )
 
-# Usage
+## Usage
 
-1. Collect Data
+### 1. Collect Data
 
 Run the following command to start the data collection process:
 python main.py
 
-2. Examine Data
+### 2. Examine Data
+
 The data will be stored in the tablo table in the MySQL database. You can use a MySQL client or a database management tool to examine the data.
 
 Database Structure
@@ -101,7 +84,7 @@ fiyat: Product price
 lptp_tam: Product URL
 
 
-# Sources
+## Sources
 
 You can review the project interface code [here](Arayuz.php).
 
